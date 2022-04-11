@@ -1,9 +1,13 @@
 import React from 'react'
 import './Statistics.css'
 
+interface Props {
+    good: number;
+    neutral: number;
+    bad: number;
+}
 
-
-export default function Statistics ({good, neutral, bad}) {
+export default function Statistics  ({good, neutral, bad}: Props) {
    
    
    let total = good + bad + neutral

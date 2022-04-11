@@ -1,10 +1,14 @@
 import React  from 'react'
 import './Feedback.css'
 
+interface Props {
+  options: string[];
+  addFeed: React.MouseEventHandler<HTMLButtonElement> ;
+}
 
 
 
-export default function FeedbackOptions ({options, addFeed}) {
+export default function FeedbackOptions ({options, addFeed}: Props) {
   
      
     return (

@@ -1,6 +1,12 @@
 import './Section.css'
+interface Props {
 
-export default function Section ({title, children}) {
+    title: string;
+    children: any
+}
+
+
+export default function Section ({title, children}: Props) {
     return (
 
         <section>

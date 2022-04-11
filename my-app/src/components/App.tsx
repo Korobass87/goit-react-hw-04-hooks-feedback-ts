@@ -4,7 +4,8 @@ import Statistics from './Statistics/Statistics'
 import Section from './Section/Section'
 import Notification from './Notification/Notification'
 
-const feed = ["good", "neutral", "bad" ]
+
+const feed: string[] = ["good", "neutral", "bad" ]
 
 
 export default function App () {
@@ -13,7 +14,9 @@ export default function App () {
   const [neutral, setNeutral] = useState(0)
   const [bad, setBad] = useState(0)
 
-  function addFeed (e) {
+  function addFeed (e: any) {
+    console.log(typeof(e));
+    
     let feedName = e.target.name
     
     // рабочий вариант, но не знаю можно ли так делать
